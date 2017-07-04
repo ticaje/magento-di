@@ -1,0 +1,18 @@
+{
+    "name": "ticaje/di",
+    "description": "A dependency injection module",
+    "type": "magento-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hector Luis Barrientos Margolles",
+            "email": "ticaje@filetea.me"
+        }
+    ],
+    "require": {
+        "aydin-hassan/magento-core-composer-installer" : "~1.2"
+    },
+    "extra": {
+        "magento-root-dir": "."
+    }
+}
