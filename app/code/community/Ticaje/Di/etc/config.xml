@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <ticaje_di>
+            <version>1.0.0</version> 
+        </ticaje_di>
+    </modules>
+	<global>
+		<models>
+			<ticaje_di>
+				<class>Ticaje_Di_Model</class>
+			</ticaje_di>
+		</models>
+		<events>
+			<controller_front_init_before>
+				<observers>
+					<ticaje_di>
+						<class>ticaje_di/autoloader</class>
+						<method>addAutoloader</method>
+					</ticaje_di>
+				</observers>
+			</controller_front_init_before>
+			<default>
+				<observers>
+					<ticaje_di_cron>
+						<class>ticaje_di/autoloader</class>
+						<method>addAutoloader</method>
+					</ticaje_di_cron>
+				</observers>
+			</default>
+		</events>
+	</global>
+</config>
